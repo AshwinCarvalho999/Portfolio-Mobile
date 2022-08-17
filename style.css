@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+}
+
+header {
+  font-family: 'Roboto', 'Gill Sans', Calibri, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+}
+
+#header-mobile {
+  margin: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+  width: 100%;
+}
+
+.logo {
+  height: 36px;
+}
+
+.hamburger {
+  width: 24px;
+  height: auto;
+}
+
+.hamburger.active {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #3c3a39;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: block;
+  color: #fff5e1;
+  padding: 15px;
+  border-bottom: 1px solid #6f6c6b;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  margin: 12px;
+}
+
+.x-button {
+  text-align: end;
+  font-size: 24px;
+  color: #6f6c6b;
+}
+
+.intro {
+  margin-top: 60px;
+  padding: 120px 24px;
+  background: url('images/illustration-header-mobile.png') no-repeat;
+  background-position: right 120%;
+  background-color: #1c1a19;
+}
+
+h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', 'Gill Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  margin: 0;
+}
+
+h2 {
+  color: #fff5e1;
+  font-family: 'Roboto', 'Gill Sans', sans-serif;
+  line-height: 32px;
+  margin: 12px 0;
+}
+
+.intro p {
+  font-family: 'Poppins', 'Gill Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul.social-icons {
+  margin: 22px 0 0 10px;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.social-icons li {
+  align-self: baseline;
+  height: max-content;
+}
+
+.social-icons i {
+  color: #dbd8d7;
+  font-size: 20px;
+}
